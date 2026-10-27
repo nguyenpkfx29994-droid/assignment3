@@ -1,0 +1,56 @@
+@media (max-width: 1440px) {
+    body {
+        font-size: 15px !important;
+    }
+    /* navbar */
+    .navbar-title * {
+        margin: 0;
+    }
+
+    .navbar-link {
+        width: 166px;
+    }
+
+    /* ttnn */
+    .ttnn-section {
+        width: 300px !important;
+    }
+    .ttnn-icon {
+        width: 25px;
+    }
+    .ttnn {
+        gap: 100px;
+        margin: 75px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* laptop small */
+
+    /* navbar */
+    .navbar-title p {
+        font-size: 10px;
+    }
+
+    .navbar-title h3 {
+        font-size: 15px;
+    }
+
+    .navbar-title {
+
+        width: 250px;
+    }
+    /* ccgt */
+    .ccgt-image {
+        width: 200px !important;
+    }
+    /* duan */
+    .du-an {
+        margin: 0px 75px;
+    }
+    .du-an-content {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 100px;
+    }
+}

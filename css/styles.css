@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+
+:root {
+    --blue: #08a0e9;
+}
+
+a,
+a * {
+    text-decoration: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    width: 100% !important;
+}
+
+/* templates */
+
+.secondary {
+    color: gray;
+}
+
+.row-other {
+    grid-template-columns: 33% 33% 33%;
+    gap: 125px;
+}
+
+.col {
+    width: 50% !important;
+}
+
+.current,
+.time {
+    background-color: var(--blue);
+    border: 3.5px solid var(--blue);
+    border-radius: 30px;
+    color: #fff;
+}
+
+/*Banner*/
+.title {
+    /* top: 50%;
+    left: 42.5%; */
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    right: 40%;
+
+}
+
+#banner {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+/*Navbar*/
+.navbar {
+    margin-top: 0;
+    color: #000;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    border: 1px gainsboro solid;
+    max-height: min-content;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: row;
+}
+
+.navbar a {
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.navbar a span {
+    width: 100px;
+    font-size: 15px;
+}
+
+.navbar i {
+    color: var(--blue);
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+
+
+.navbar-title {
+    padding: 0px 7px;
+    width: 500px;
+    display: flex;
+}
+
+.navbar-title p {
+    margin: 0;
+}
+
+/*Thông tin cá nhân*/
+
+.ttcn {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+}
+
+#muc-tieu {
+    padding: 50px 50px 100px 100px;
+}
+
+#thong-tin {
+    padding: 50px 100px 100px 50px;
+}
+
+#muc-tieu {
+    background-color: #f5f5f5;
+}
+
+#thong-tin {
+    background-color: #f0f0f0;
+}
+
+.ttcn-content {
+    display: none;
+}
+
+.ttcn-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ttcn-list li {
+    margin: 5px 0px;
+}
+
+.ttcn-icon {
+    color: var(--blue);
+}
+
+/*Thông tin nghề nghiệp*/
+.ttnn {
+    margin: 100px 150px;
+}
+
+.ttnn-section {
+    border: 2.5px gainsboro solid;
+    margin: 0px 2em;
+    width: 600px !important;
+}
+
+.ttnn-section-title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.ttnn-icon {
+    font-size: 90px;
+    text-align: center;
+}
+
+.ttnn-section-header div {
+    padding: 0;
+    margin: 25px 0px;
+}
+
+.ttnn-section-header:hover+.ttnn-view-toggle {
+    display: block;
+}
+
+.ttnn-section-body {
+    margin: 0px 5px;
+    display: none;
+}
+
+.ttnn-section-header {
+    margin-bottom: 50px;
+}
+
+.ttnn-section-header-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 50px;
+}
+.ttnn-section-header-section {
+    width: max-content !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+
+.ttnn-section-header-section-content {
+    width: max-content;
+}
+
+.ttnn-view-toggle {
+    display: inline-block;
+    background-color: #f5f6bb;
+    border: 10px #f5f6bb solid;
+    border-radius: 30px;
+    display: none;
+}
+
+.ttnn-section-list {
+    list-style-type: none;
+    padding: 0px 0px 15px 0px;
+}
+
+.ttnn-section-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0px;
+}
+
+.ttnn-section-list ul li::before {
+    content: "-";
+}
+
+.ttnn-date {
+    margin: 5px 0px;
+    font-style: italic;
+}
+
+.favorit-icon {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    text-align: center;
+}
+
+.favorit-icon-icon {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-content: center !important;
+    flex-wrap: wrap !important;
+    border: 2.5px rgb(25, 210, 161) solid;
+    border-radius: 50%;
+    padding: 10px;
+    width: 75px;
+}
+
+#ttnn-row-bottom {
+    min-height: 225px !important;
+}
+
+.ttnn-bars {
+    margin: 10px 0px 20px 0px;
+}
+
+.blue-bar {
+    border: var(--blue) 5px solid;
+    height: 0px;
+    width: 75px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.gray-bar {
+    border: gainsboro 5px solid;
+    height: 0px;
+    width: 75px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+/*Chứng Chỉ*/
+.ccgt {
+    padding: 50px 0px;
+    margin: 0px 150px;
+}
+
+.ccgt-container {
+    background-color: #f7f7f7;
+}
+
+.ccgt h1 {
+    margin-bottom: 50px;
+}
+
+.ccgt img {
+    width: 75%;
+}
+
+.ccgt-image {
+    width: 500px !important;
+}
+
+.ccgt-content {
+    display: grid;
+}
+
+.ccgt-col {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.ccgt-top {
+    border-bottom: 1px #d6c08d solid;
+    padding-bottom: 50px;
+}
+
+.ccgt-bottom {
+    border-top: 1px #d6c08d solid;
+    padding-bottom: 50px;
+}
+
+.ccgt-entry {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.ccgt-topleft {
+    border-right: 1px #d6c08d solid;
+    padding-right: 25px;
+}
+
+.ccgt-topright {
+    border-left: 1px #d6c08d solid;
+    padding-left: 25px;
+}
+
+.ccgt-botleft {
+    margin-top: 50px;
+    padding-right: 25px;
+}
+.ccgt-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.ccgt-text ul {
+    width: 300px;
+}
+.ccgt-text {
+    width: 300px;
+}
+/* Dự án */
+
+.du-an {
+    margin: 0px 150px;
+    gap: 75px;
+}
+
+.du-an h1 {
+    margin-bottom: 50px;
+}
+
+.du-an-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.du-an-section-image img {
+    width: 100%;
+}
+
+.du-an-section-box {
+    border: 1px gainsboro solid;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 15px;
+}
+
+.du-an-section-box p {
+    margin: 0;
+}
+
+#du-an-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.du-an-table {
+    align-items: normal;
+    padding: 0;
+}
+
+.du-an-table-row {
+    display: grid;
+    grid-template-columns: 33% 66%;
+    border: 1px gainsboro solid;
+}
+
+.du-an-table-left,
+.du-an-table-right {
+    padding-bottom: 10px;
+}
+
+/* footer */
+.footer {
+    background-color: #f7f7f7;
+    padding: 50px 0px;
+    margin-top: 150px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer i {
+    color: var(--blue);
+}
+
+.footer-links {
+    display: inline-block;
+    font-size: 25px;
+}

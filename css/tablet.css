@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 15px !important;
+    }
+
+    /*navbar*/
+    .navbar-title {
+        display: none !important;
+    }
+
+    /* ttcn */
+    .ttcn>div {
+        padding: 10px 10px 50px 50px;
+    }
+    /* ttnn */
+    .ttnn-icon {
+        font-size: 45px;
+    }
+    .ttnn {
+        gap: 50px;
+        margin: 50px;
+    }
+    /* cc-gt */
+    .ccgt {
+        margin: 0px 75px;
+    }
+    .ccgt-entry {
+        grid-template-columns: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ccgt-text {
+        width: 100% !important;
+    }
+    .ccgt-image {
+        width: 200px;
+    }
+    .ccgt-image img {
+        width: 100%;
+    }
+    /* duan */
+    .du-an {
+        margin: 0px 50px;
+    }
+    .du-an-content {
+        gap: 50px;
+    }
+}
