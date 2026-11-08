@@ -33,6 +33,9 @@
         padding: 50px !important;
     }
     /* ccgt */
+    .ccgt {
+        margin: 0 !important;
+    }
     .ccgt-content {
         margin: 0px;
         width: fit-content !important;
